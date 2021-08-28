@@ -1,0 +1,25 @@
+{
+    "name": "@hanchon/ethermint-address-converter",
+    "version": "0.0.1",
+    "description": "Converter between ETH and Ethermint addresses",
+    "license": "MIT",
+    "repository": "hanchonlive/ethermint-address-converter",
+    "main": "index.js",
+    "keywords": [
+        "ethermint",
+        "bech32",
+        "eth"
+    ],
+    "author": "Hanchon",
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "bech32": "^2.0.0",
+        "crypto-addr-codec": "^0.1.7"
+    },
+    "devDependencies": {
+        "@types/node": "^16.7.4",
+        "typescript": "^4.4.2"
+    }
+}
