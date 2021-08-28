@@ -12,14 +12,21 @@
     ],
     "author": "Hanchon",
     "scripts": {
-        "build": "tsc"
+        "build": "tsc",
+        "test": "jest"
     },
     "dependencies": {
-        "bech32": "^2.0.0",
+        "bech32": "^1.1.3",
         "crypto-addr-codec": "^0.1.7"
     },
     "devDependencies": {
+        "@babel/core": "^7.15.0",
+        "@babel/preset-env": "^7.15.0",
+        "@babel/preset-typescript": "^7.15.0",
+        "@types/jest": "^27.0.1",
         "@types/node": "^16.7.4",
+        "babel-jest": "^27.1.0",
+        "jest": "^27.1.0",
         "typescript": "^4.4.2"
     }
 }
