@@ -1,14 +1,13 @@
 {
     "name": "@hanchon/ethermint-address-converter",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Converter between ETH and Ethermint addresses",
     "license": "MIT",
     "repository": "hanchon-live/ethermint-address-converter",
     "source": "src/converter.ts",
     "main": "lib/converter.js",
+    "module": "./lib/converter.module.js",
     "types": "lib/converter.d.ts",
-    "exports": "./dist/converter.modern.js",
-    "module": "./dist/converter.module.js",
     "keywords": [
         "ethermint",
         "bech32",
