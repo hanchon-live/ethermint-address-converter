@@ -7,7 +7,8 @@
     "source": "src/converter.ts",
     "main": "lib/converter.js",
     "types": "lib/converter.d.ts",
-    "type": "module",
+    "exports": "./dist/converter.modern.js",
+    "module": "./dist/converter.module.js",
     "keywords": [
         "ethermint",
         "bech32",
@@ -21,8 +22,8 @@
     ],
     "author": "Hanchon <guillermo.paoletti@gmail.com>",
     "scripts": {
-        "build": "tsc",
-        "test": "jest"
+        "build": "microbundle",
+        "test": "NODE_OPTIONS=--experimental-vm-modules jest"
     },
     "dependencies": {
         "bech32": "^1.1.3",
@@ -36,6 +37,7 @@
         "@types/node": "^16.7.4",
         "babel-jest": "^27.1.0",
         "jest": "^27.1.0",
+        "microbundle": "^0.13.3",
         "typescript": "^4.4.2"
     }
 }
