@@ -1,6 +1,6 @@
 {
     "name": "@hanchon/ethermint-address-converter",
-    "version": "0.0.3",
+    "version": "1.0.0",
     "description": "Converter between ETH and Ethermint addresses",
     "license": "MIT",
     "repository": "hanchon-live/ethermint-address-converter",
