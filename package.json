@@ -7,6 +7,7 @@
     "source": "src/converter.ts",
     "main": "lib/converter.js",
     "types": "lib/converter.d.ts",
+    "type": "module",
     "keywords": [
         "ethermint",
         "bech32",
