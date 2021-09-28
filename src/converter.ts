@@ -69,3 +69,16 @@ export const ethermintToEth = (ethermintAddress: string) => {
   let data = ETHERMINT.decoder(ethermintAddress);
   return ETH.encoder(data);
 };
+
+
+export const EVMOS = bech32Chain('EVMOS', 'evmos');
+
+export const ethToEvmos = (ethAddress:string) => {
+  let data = ETH.decoder(ethAddress);
+  return EVMOS.encoder(data);
+}
+
+export const evmosToEth = (evmosAddress: string) => {
+  let data = EVMOS.decoder(evmosAddress);
+  return ETH.encoder(data);
+};
