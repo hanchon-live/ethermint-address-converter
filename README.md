@@ -55,6 +55,18 @@ let address = evmosToEth("evmos1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw")
 // "0x14574a6DFF2Ddf9e07828b4345d3040919AF5652"
 ```
 
+### REBUS support
+```ts
+import {ethToRebus, rebusToEth} from "@hanchon/ethermint-address-converter"
+
+let address = ethToRebus("0x14574a6DFF2Ddf9e07828b4345d3040919AF5652")
+// "rebus1z3t55m0l9h0eupuz3dp5t5cypyv674jjdss3us"
+
+let address = rebusToEth("rebus1z3t55m0l9h0eupuz3dp5t5cypyv674jjdss3us")
+// "0x14574a6DFF2Ddf9e07828b4345d3040919AF5652"
+```
+
+
 ## Build locally
 
 ``` sh

@@ -82,3 +82,15 @@ export const evmosToEth = (evmosAddress: string) => {
   let data = EVMOS.decoder(evmosAddress);
   return ETH.encoder(data);
 };
+
+export const REBUS = bech32Chain('REBUS', 'rebus');
+
+export const ethToRebus = (ethAddress:string) => {
+  let data = ETH.decoder(ethAddress);
+  return REBUS.encoder(data);
+}
+
+export const rebusToEth = (evmosAddress: string) => {
+  let data = REBUS.decoder(evmosAddress);
+  return ETH.encoder(data);
+};
