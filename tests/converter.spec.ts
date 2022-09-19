@@ -1,4 +1,4 @@
-import { ETH, ETHERMINT, EVMOS, ethToEthermint, ethermintToEth, evmosToEth, ethToEvmos } from '../src/converter';
+import { ETH, ETHERMINT, EVMOS, ethToEthermint, ethermintToEth, evmosToEth, ethToEvmos, ethToRebus, rebusToEth } from '../src/converter';
 
 test('test decoders', () => {
   // ETH
@@ -33,8 +33,11 @@ test('test converters', () => {
   // ETH to EVMOS 
   address = ethToEvmos("0x14574a6DFF2Ddf9e07828b4345d3040919AF5652");
   expect(address).toBe("evmos1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw");
+
+  // Rebus
+  address = rebusToEth("rebus1z3t55m0l9h0eupuz3dp5t5cypyv674jjdss3us");
+  expect(address).toBe("0x14574a6DFF2Ddf9e07828b4345d3040919AF5652");
+  // ETH to EVMOS 
+  address = ethToRebus("0x14574a6DFF2Ddf9e07828b4345d3040919AF5652");
+  expect(address).toBe("rebus1z3t55m0l9h0eupuz3dp5t5cypyv674jjdss3us");
 })
-
-
-
-
