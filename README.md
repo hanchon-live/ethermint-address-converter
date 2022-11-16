@@ -1,5 +1,7 @@
 # Ethermint address converter
 
+NOTE: THIS REPO IS ARCHIVED, IT WAS MOVED TO [EVMOSJS](https://github.com/evmos/evmosjs/tree/main/packages/address-converter)
+
 A simple converter between `ETH` address and `Ethermint` addresses.
 
 ## Installation
